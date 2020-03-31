@@ -2,7 +2,7 @@
 #define GAME_HPP
 
 #include "SDL2/SDL.h"
-#include "stdio.h"
+#include "iostream"
 
 class Game {
 public:
