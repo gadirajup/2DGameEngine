@@ -19,7 +19,8 @@ add_executable(
     src/main.cpp 
     src/game.cpp 
     src/timer.cpp
-    src/texture_manager.cpp)
+    src/texture_manager.cpp
+    src/game_object.cpp)
 
 file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
 string(STRIP ${SDL2_LIBRARIES} SDL2_LIBRARIES)
