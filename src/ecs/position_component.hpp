@@ -1,10 +1,20 @@
-#ifndef COMPONENTS_HPP
-#define COMPONENTS_HPP
+#ifndef POSITION_COMPONENT_HPP
+#define POSITION_COMPONENT_HPP
 
-#include "ecs.hpp"
+#include "components.hpp"
 
 class PositionComponent: public Component {
 public:
+    PositionComponent() {
+        xpos = 0;
+        ypos = 0;
+    }
+
+    PositionComponent(int x, int y) {
+        xpos = x;
+        ypos = y;
+    }
+
     int x() { return xpos; }
     int y() { return ypos; }
 
@@ -28,4 +38,4 @@ private:
     int ypos;
 };
 
-#endif // COMPONENTS_HPP
+#endif // POSITION_COMPONENT_HPP

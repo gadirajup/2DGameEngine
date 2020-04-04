@@ -43,11 +43,11 @@ class Entity {
 public:
     void update() {
         for (auto& c : components) c->update();
-        for (auto& c : components) c->draw();
+        
     }
 
     void draw() {
-
+        for (auto& c : components) c->draw();
     }
 
     bool isActive() const { return active; }
