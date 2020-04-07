@@ -1,5 +1,4 @@
 #include "map.hpp"
-#include "texture_manager.hpp"
 
 int lvl1[20][25] = {
     { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 },
@@ -41,6 +40,12 @@ Map::Map() {
     dest.w = 32;
     dest.h = 32;
 
+}
+
+Map::~Map() {
+    SDL_DestroyTexture(grass);
+    SDL_DestroyTexture(water);
+    SDL_DestroyTexture(dirt);
 }
 
 void Map::loadMap(int arr[20][25]) {

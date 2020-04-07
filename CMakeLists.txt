@@ -13,6 +13,7 @@ find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS} src)
 include_directories(${SDL2_INCLUDE_DIRS} ${SDL2_IMAGE_INCLUDE_DIRS})
+include_directories(src/ecs)
 
 add_executable(
     GameEngine 
@@ -22,7 +23,8 @@ add_executable(
     src/texture_manager.cpp
     src/game_object.cpp
     src/map.cpp
-    src/vector2d.cpp)
+    src/vector2d.cpp
+    src/collision.cpp)
 
 file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
 string(STRIP ${SDL2_LIBRARIES} SDL2_LIBRARIES)

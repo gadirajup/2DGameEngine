@@ -1,7 +1,7 @@
 #ifndef MAP_HPP
 #define MAP_HPP
 
-#include "game.hpp"
+#include "texture_manager.hpp"
 
 class Map {
 public:
