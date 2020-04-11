@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/workspace/2DGameEngine/src/vector2d.cpp
+vector2d.hpp
+/home/workspace/2DGameEngine/src/vector2d.hpp
+
+/home/workspace/2DGameEngine/src/vector2d.hpp
+iostream
+-
+
